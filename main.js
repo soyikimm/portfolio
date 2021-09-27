@@ -26,6 +26,14 @@ homeContact.addEventListener('click', () => {
     scroolIntoView('#contact');
 });
 
+// Make home slowly fadeout
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+
 function scroolIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
