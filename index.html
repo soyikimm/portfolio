@@ -24,7 +24,6 @@
         <i class="fab fa-diaspora"></i>
         <a href="#">Solyi</a>
     </div>
-    <div id="navbar__menu">
         <ul class="navbar__menu">
             <li class="navbar__menu__item active" data-link="#home">Home</li>
             <li class="navbar__menu__item" data-link="#about">About</li>
@@ -33,8 +32,6 @@
             <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li> -->
             <li class="navbar__menu__item"data-link="#contact">contact</li>
         </ul>
-    </div>
-
     <!-- Toggle button -->
     <button class="navbar__toggle-btn">
         <i class="fas fa-bars"></i>
@@ -170,21 +167,50 @@
     <h1>My work</h1>
     <h3>Projects</h3>
     <div class="work__categories">
-    <button class="category__btn">All <span class="category__count">2</span>
+    <button class="category__btn" data-filter="*">All <span class="category__count">1</span>
     </button>
-    <button class="category__btn">Web-page <span class="category__count">1</span>
+    <button class="category__btn" data-filter="Front-end">Front-end <span class="category__count">1</span>
     </button>
-    <button class="category__btn">React <span class="category__count">1</span>
+    <button class="category__btn" data-filter="Back-end">Back-end<span class="category__count">0</span>
+    </button>
+    <button class="category__btn" data-filter="React">React <span class="category__count">0</span>
     </button>
     </div>
 
     <div class="work__projects">
-        <a 
-        href="https://github.com/soyikimm" 
-        class="projects"
-        target="blank"
-        >
-    </a>
+        <a href="" class="project" target="blank" data-type="Front-end">
+            <img
+              src="imgs/todolist.png"
+              alt="Todolist"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>TodoList</h3>
+              <span>Clone coding with HTML, CSS, JavaScript</span>
+            </div>
+          </a>
+          <a href="" class="project" target="blank" data-type="Back-end">
+            <img
+              src="imgs/backend.png"
+              alt="back-end_ready"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>Back-end</h3>
+              <span>사이트 준비중 입니다.</span>
+            </div>
+          </a>
+          <a href="" class="project" target="blank" data-type="React">
+            <img
+              src="imgs/empty.png"
+              alt="React_ready"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h3>React</h3>
+              <span>사이트 준비중 입니다.</span>
+            </div>
+          </a>
     </div>
 </section>
 
