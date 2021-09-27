@@ -18,7 +18,15 @@ navbarMenu.addEventListener('click', () => {
     if (link == null) { //링크가 있는경우에만 수행되게함
       return;
     }
-    console.log(event.target.dataset.link);
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({behavior: "smooth"});
+    scroolIntoView(link);
 });
+
+const homeContact = document.querySelector('.home__contact');
+homeContact.addEventListener('click', () => {
+    scroolIntoView('#contact');
+});
+
+function scroolIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({behavior: "smooth"});
+}
