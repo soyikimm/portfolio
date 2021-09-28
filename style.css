@@ -106,6 +106,12 @@ p {
   color: var(--color-white);
   padding: 16px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-pink);
+  padding: 8px;
 }
 
 .navbar__menu {
@@ -138,7 +144,7 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 14px;
+  top: 20px;
   right: 32px;
   font-size: 24px;
   color: var(--color-white);
@@ -147,7 +153,7 @@ p {
 
 /* Home */
 #home {
-  background: url("imgs/home-background.png") center/cover no-repeat;
+  background: url("imgs/background.png") center/cover no-repeat;
   padding: 40px;
   padding-top: 150px;
   text-align: center;
@@ -452,8 +458,7 @@ p {
   }
 
   #navbar.navbar--dark {
-    background-color: var(--color-pink);
-    padding: 8px;
+    padding: 16px;
   }
 
   .navbar__menu {

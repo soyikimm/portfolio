@@ -21,22 +21,23 @@
 <!-- Navbar -->
 <nav id="navbar">
     <div class="navbar__logo">
-        <i class="fab fa-diaspora"></i>
-        <a href="#">Solyi</a>
+      <i class="fab fa-diaspora"></i>
+      <a href="#">Solyi</a>
     </div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item active" data-link="#home">Home</li>
-            <li class="navbar__menu__item" data-link="#about">About</li>
-            <li class="navbar__menu__item" data-link="#skills">Skills</li>
-            <li class="navbar__menu__item" data-link="#work">My work</li>
-            <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li> -->
-            <li class="navbar__menu__item"data-link="#contact">contact</li>
-        </ul>
+    <ul class="navbar__menu">
+        <li class="navbar__menu__item active" data-link="#home">Home</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#skills">Skills</li>
+        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <!-- <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li> -->
+        <li class="navbar__menu__item"data-link="#contact">contact</li>
+    </ul>
     <!-- Toggle button -->
     <button class="navbar__toggle-btn">
-        <i class="fas fa-bars"></i>
+      <i class="fas fa-bars"></i>
     </button>
-</nav>
+  </nav>
+
 
 <!-- Home -->
 <section id="home">
@@ -45,8 +46,8 @@
         src="imgs/me.jpg" 
         alt="solyi's profile photo" 
         class="home__avatar">
-        <h1 class="home__title">안녕하세요, <br/>저는 김솔이입니다.</h1>
-        <h3 class="home__description">최고의 코더를 꿈꾸는 프론트엔드 주니어개발자 입니다!</h3>
+        <h1 class="home__title">반갑습니다! <br/>제 이름은 김솔이입니다.</h1>
+        <h3 class="home__description">만능 코더를 꿈꾸는 주니어개발자 입니다!</h3>
         <button class="home__contact" data-link="#contact">CONTACT ME</button>
     </div>
     
@@ -56,7 +57,9 @@
 <section id="about" class="section section__container"
     <div>
     <h2>About me</h2>
-    <p>프론트엔드 뿐만 아니라, 더 나아가 백엔드도 할 수 있는 풀스택 개발자를 꿈꾸는 주니어 개발자 입니다.</p>
+    <p>프론트엔드 뿐만 아니라, 더 나아가 백엔드도 할 수 있는 풀스택 개발자를 꿈꾸는 주니어 개발자 입니다.
+      </br> 새로운것을 알아가는건 언제나 재미있습니다!
+    </p>
     </div>
     <div class="about__majors">
             <div class="major">
@@ -81,16 +84,27 @@
             <p class="major_discription"></p>
         </div>
     </div>
-    <div class="school">
-        <img src="imgs/school_logo.png"
+        <div class="school">
+            <img src="imgs/school_logo.png"
             alt="Osan University"
             class="school__logo"
-        />
+            />
         <div class="school__description">
         <p class="school__name">오산대학교</p>
         <p class="school__period">2016년도 컴퓨터정보과 입학 </br> 2018년도 졸업</p>
         </div>
-    </div>
+        </div>
+
+        <div class="school">
+          <img src="imgs/certificate.png"
+          alt="Osan University"
+          class="school__logo"
+          />
+      <div class="school__description">
+      <p class="school__name">정보처리산업기사</p>
+      <p class="school__period">2020.11 정보처리산업기사 취득</p>
+      </div>
+      </div>
 </section>
 
 <!-- Skills -->
@@ -173,12 +187,12 @@
     </button>
     <button class="category__btn" data-filter="Back-end">Back-end<span class="category__count">0</span>
     </button>
-    <button class="category__btn" data-filter="React">React <span class="category__count">0</span>
+    <button class="category__btn" data-filter="Mobile">Mobile<span class="category__count">0</span>
     </button>
     </div>
 
     <div class="work__projects">
-        <a href="" class="project" target="blank" data-type="Front-end">
+        <a href="https://soyikimm.github.io/todolist/" class="project" target="blank" data-type="Front-end">
             <img
               src="imgs/todolist.png"
               alt="Todolist"
@@ -186,10 +200,10 @@
             />
             <div class="project__description">
               <h3>TodoList</h3>
-              <span>Clone coding with HTML, CSS, JavaScript</span>
+              <span>Clone coding with </br>HTML, CSS, JavaScript</span>
             </div>
           </a>
-          <a href="" class="project" target="blank" data-type="Back-end">
+          <a class="project" target="blank" data-type="Back-end">
             <img
               src="imgs/backend.png"
               alt="back-end_ready"
@@ -200,14 +214,14 @@
               <span>사이트 준비중 입니다.</span>
             </div>
           </a>
-          <a href="" class="project" target="blank" data-type="React">
+          <a class="project" target="blank" data-type="Mobile">
             <img
-              src="imgs/empty.png"
+              src="imgs/mobile.jpg"
               alt="React_ready"
               class="project__img"
             />
             <div class="project__description">
-              <h3>React</h3>
+              <h3>Mobile</h3>
               <span>사이트 준비중 입니다.</span>
             </div>
           </a>
