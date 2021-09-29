@@ -31,7 +31,7 @@ navbarMenu.addEventListener('click', () => {
 
 const homeContact = document.querySelector('.home__contact');
 homeContact.addEventListener('click', () => {
-    scroolIntoView('#contact');
+    scrollIntoView('#contact');
 });
 
 // Make home slowly fadeout
