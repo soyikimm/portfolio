@@ -26,7 +26,7 @@ navbarMenu.addEventListener('click', () => {
     if (link == null) { //링크가 있는경우에만 수행되게함
       return;
     }
-    scroolIntoView(link);
+    scrollIntoView(link);
 });
 
 const homeContact = document.querySelector('.home__contact');
