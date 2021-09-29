@@ -51,7 +51,7 @@ workBtnContainer.addEventListener('click', (e) => {
     return;
   }
 
-  // Remove selection from the previous item and select the new one
+// Remove selection from the previous item and select the new one
   const active = document.querySelector('.category__btn.selected');
   if (active != null) {
     active.classList.remove('selected');
@@ -73,7 +73,22 @@ workBtnContainer.addEventListener('click', (e) => {
 });
 
 
-function scroolIntoView(selector) {
+// show "arrow up" button when scrolling down
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', ()=> {
+  if(window.scrollY > homeHeight /2){
+    arrowUp.classList.add('visible');
+  } else{
+    arrowUp.classList.remove('visible');
+  }
+});
+
+// Handle click on the "arrow up" button
+arrowUp.addEventListener('click', ()=> {
+  scrollIntoView('#home');
+});
+
+function scrollIntoView(selector) {
     const scrollTo = document.querySelector(selector);
     scrollTo.scrollIntoView({behavior: "smooth"});
 }
