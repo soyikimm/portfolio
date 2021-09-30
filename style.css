@@ -16,7 +16,7 @@
 
   /* Font size */
   --font-large: 48px;
-  --font-medium: 25px;
+  --font-medium: 30px;
   --font-regular: 18px;
   --font-small: 16px;
   --font-micro: 14px;
@@ -473,6 +473,13 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    --font-large: 32px;
+    --font-medium: 25px;
+    --font-regular: 20px;
+    --font-small: 15px;
+    --font-micro: 12px;
+  }
   .navbar__toggle-btn {
     display: block;
   }
