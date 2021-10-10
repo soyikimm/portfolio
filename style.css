@@ -106,7 +106,7 @@ p {
   color: var(--color-white);
   padding: 16px;
   transition: all var(--animation-duration) ease-in-out;
-  z-index: 1;
+  z-index: 1; /* 제일 위에위치! */
 }
 
 #navbar.navbar--dark {
