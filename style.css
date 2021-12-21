@@ -230,13 +230,13 @@ p {
 }
 
 .school {
+  flex-direction: column;
   display: flex;
   align-items: center;
 }
 
 .school__description {
   margin: 0 16px;
-  text-align: left;
 }
 
 .school__name,
