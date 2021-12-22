@@ -198,10 +198,15 @@ p {
   margin: auto;
 }
 
+.intro {
+  margin-bottom: 100px;
+}
+
 .about__majors {
   display: flex;
   justify-content: space-between;
-  margin: 100px 0;
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
 
 .major__icon i {
@@ -230,11 +235,15 @@ p {
 }
 
 .school {
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   display: flex;
   align-items: center;
 }
 
+.school__bar {
+  justify-content: space-between;
+}
 .school__description {
   margin: 0 16px;
 }
@@ -356,6 +365,7 @@ p {
   justify-content: center;
   opacity: 1;
   transition: all var(--animation-duration) ease-out;
+  margin-bottom: 100px;
 }
 
 .work__projects.anim-out {
